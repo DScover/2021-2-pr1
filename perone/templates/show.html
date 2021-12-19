@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>PER graph</title>
+</head>
+<body>
+    <h1 style="color:red">
+        각 종목별 실제 PER과 적정 PER 차이(10 이상인 종목 분석)
+    </h1>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<div class="chart" id="bargraph" style='color:orange'>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<script>var graphs = {{plot | safe}};
+Plotly.plot('bargraph',graphs,{});</script>
+</div>
+</div>
+</div>
+</div>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-l6oj{border-color:#212121;color:#212121;font-size:20px;text-align:center;vertical-align:top}
+.tg .tg-czoh{border-color:#212121;color:#212121;font-size:20px;text-align:left;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-l6oj">종목</th>
+    <th class="tg-l6oj">회사 이름</th>
+    <th class="tg-l6oj">종목</th>
+    <th class="tg-l6oj">회사 이름</th>
+      <td class="tg-czoh">종목</td>
+    <td class="tg-czoh">회사 이름</td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+      <td class="tg-czoh">SE</td>
+    <td class="tg-czoh">삼성</td>
+    <td class="tg-czoh">SH</td>
+    <td class="tg-czoh">하이닉스</td>
+    <td class="tg-czoh">NV</td>
+      <td class="tg-czoh">네이버</td>
+  </tr>
+  <tr>
+    <td class="tg-czoh">SB</td>
+    <td class="tg-czoh">삼성바이오로직스</td>
+    <td class="tg-czoh">SE_</td>
+    <td class="tg-czoh">삼성전자(우)</td>
+      <td class="tg-czoh">KAKAO</td>
+    <td class="tg-czoh">카카오</td>
+  </tr>
+  <tr>
+    <td class="tg-czoh">LGC</td>
+    <td class="tg-czoh">LG화학</td>
+      <td class="tg-czoh">SS</td>
+    <td class="tg-czoh">삼성SDI</td>
+    <td class="tg-czoh">HM</td>
+    <td class="tg-czoh">현대모비스</td>
+  </tr>
+  <tr>
+     <td class="tg-czoh">KIA</td>
+    <td class="tg-czoh">기아</td>
+      <td class="tg-czoh">KB</td>
+    <td class="tg-czoh">카카오뱅크</td>
+    <td class="tg-czoh">Cell</td>
+    <td class="tg-czoh">셀트리온</td>
+  </tr>
+  <tr>
+      <td class="tg-czoh">KP</td>
+    <td class="tg-czoh">카카오페이</td>
+    <td class="tg-czoh">POSCO</td>
+    <td class="tg-czoh">포스코</td>
+    <td class="tg-czoh">KBF</td>
+    <td class="tg-czoh">KB금융</td>  
+    </tr>
+    
+  <tr>
+    <td class="tg-czoh">Krafton</td>
+    <td class="tg-czoh">크래프톤</td>
+    <td class="tg-czoh">HM</td>
+    <td class="tg-czoh">현대모비스</td>
+    <td class="tg-czoh">SM</td>
+    <td class="tg-czoh">삼성물산</td>
+  </tr>
+    
+  <tr>
+    <td class="tg-czoh">LGE</td>
+    <td class="tg-czoh">LG전자</td>
+    <td class="tg-czoh">SKI</td>
+    <td class="tg-czoh">SK이노베이션</td>
+   <td class="tg-czoh">SH</td>
+    <td class="tg-czoh">신한지주</td>
+  </tr>
+    
+  <tr>
+    <td class="tg-czoh">SKB</td>
+    <td class="tg-czoh">SK바이오사이언스</td>
+    <td class="tg-czoh">SK</td>
+    <td class="tg-czoh">SK</td>
+    <td class="tg-czoh">LGH</td>
+    <td class="tg-czoh">LG생활건강</td>
+  </tr>
+    
+  <tr>
+    <td class="tg-czoh">NC</td>
+    <td class="tg-czoh">NC소프트</td>
+    <td class="tg-czoh">HIVE</td>
+    <td class="tg-czoh">하이브</td>
+    <td class="tg-czoh">KORE</td>
+    <td class="tg-czoh">한국전력</td>
+  </tr>
+    <tr>
+           <td class="tg-czoh">SI</td>
+    <td class="tg-czoh">삼성생명</td>
+           <td class="tg-czoh">HMM</td>
+    <td class="tg-czoh">HMM</td>
+           <td class="tg-czoh"></td>
+    <td class="tg-czoh"></td>
+    </tr>
+</tbody>
+</table>
+</body>
+</html>
